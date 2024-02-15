@@ -39,7 +39,7 @@ if send_button:
 
     user_infro = {
         "first_name": first_name,
-        "last_name_part1": last_name,
+        "last_name": last_name,
         "phone_no": phone_no,
         "country_code": country_code,
     }
@@ -48,7 +48,7 @@ if send_button:
     endpoint = "/user_info"
 
     try:
-        response = requests.post(server_url + endpoint, json=user_infro)
+        response = requests.post(server_url, json=user_infro)
         st.success("Person info sent successfully!")
     except requests.RequestException as e:
         st.error(f"Error sending request: {e}")
