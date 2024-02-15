@@ -44,7 +44,7 @@ if send_button:
         "country_code": country_code,
     }
     st.write(user_infro)
-    server_url = "http://localhost:3001"
+    server_url = "https://afe9-2405-201-682c-6012-60c8-914c-e9a6-ac33.ngrok-free.app/twilio/makeCall"
     endpoint = "/user_info"
 
     try:
