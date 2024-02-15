@@ -49,9 +49,6 @@ if send_button:
 
     try:
         response = requests.post(server_url + endpoint, json=user_infro)
-        if response.status_code == 200:
-            st.success("Person info sent successfully!")
-        else:
-            st.error(f"Failed to send person info.")
+        st.success("Person info sent successfully!")
     except requests.RequestException as e:
         st.error(f"Error sending request: {e}")
