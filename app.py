@@ -44,7 +44,7 @@ if send_button:
         "country_code": country_code,
     }
     st.write(user_infro)
-    server_url = "https://36b4-2405-201-682c-6012-18b6-b4b1-33b5-9de9.ngrok-free.app/twilio/makeCall"
+    server_url = "https://voice.pipesort.com/twilio/makeCall"
     endpoint = "/user_info"
 
     try:
